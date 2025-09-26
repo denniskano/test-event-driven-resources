@@ -5,14 +5,16 @@ Este repositorio contiene los recursos de infraestructura para el proyecto PEVE 
 ## 📁 Estructura del Proyecto
 
 ```
-PEVE/
-├── ccloud-connectors/           # Configuración de conectores
-│   └── ccloud-sql-db-sink-connector-01/
-├── ccloud-flink-compute-pool/  # Configuración de compute pools
-│   └── dev-vars.yaml
-└── ccloud-flink-statements/    # Statements DDL y DML
-    ├── ddl/                    # Data Definition Language
-    └── dml/                    # Data Manipulation Language
+peve-event-driven-resources/
+├── README.md
+└── PEVE/
+    ├── ccloud-connectors/           # Configuración de conectores
+    │   └── ccloud-sql-db-sink-connector-01/
+    ├── ccloud-flink-compute-pool/  # Configuración de compute pools
+    │   └── dev-vars.yaml
+    └── ccloud-flink-statements/    # Statements DDL y DML
+        ├── ddl/                    # Data Definition Language
+        └── dml/                    # Data Manipulation Language
 ```
 
 ## 🚀 Uso
