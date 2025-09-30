@@ -1,3 +1,7 @@
+secrets_hv:
+  service_account: SA_AZC_DES_PEVE_POS_01
+  api_key: AK_AZC_DES_PEVE_TERRA_PAYMENT_01
+
 compute_pools:
   - cloud: "AZURE"
     region: "westus2"
