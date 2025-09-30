@@ -2,7 +2,7 @@ statement-name: "cc-loc-peve-terraform-internal"
 flink-compute-pool: "CP_AZC_DES_PEVE_01"
 
 statement: |
-  CREATE TABLE IF NOT EXISTS \`default\`.\`denniskano-clu\`.\`cc-loc-peve-terraform-internal\`(
+  CREATE TABLE IF NOT EXISTS `default`.`denniskano-clu`.`cc-loc-peve-terraform-internal`(
     event_start TIMESTAMP(3),
     event_end TIMESTAMP(3),
     new_field1 int,
