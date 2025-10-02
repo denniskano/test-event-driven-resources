@@ -2,7 +2,7 @@ statement-name: "insert-internal-from-input-loop-v1"
 flink-compute-pool: "CP_AZC_DES_PEVE_02"
 stopped: "true" # true to pause, false to resume
 statement: |
-  INSERT INTO `default`.`denniskano-clu`.`demo_table`
+  INSERT INTO `${catalog_name}`.`${cluster_name}`.`demo_table`
   VALUES 
     ('1', 'Juan', CURRENT_TIMESTAMP),
     ('2', 'María', CURRENT_TIMESTAMP),

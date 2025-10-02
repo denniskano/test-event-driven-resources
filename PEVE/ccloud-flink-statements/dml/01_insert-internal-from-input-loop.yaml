@@ -2,7 +2,7 @@ statement-name: "insert-internal-from-input-loop-v1"
 flink-compute-pool: "CP_AZC_DES_PEVE_01"
 stopped: "true" # true to pause, false to resume
 statement: |
-  insert into `default`.`denniskano-clu`.`cc-loc-peve-terraform-internal`(
+  insert into `${catalog_name}`.`${cluster_name}`.`cc-loc-peve-terraform-internal`(
     event_start,
     event_end,
     new_field1,
@@ -19,7 +19,7 @@ statement: |
     CAST (COUNT(my_field1) AS INT) AS my_field4
   FROM TABLE (
   TUMBLE (
-    TABLE `default`.`denniskano-clu`.`cc-loc-peve-terraform-input-loop`,
+    TABLE `${catalog_name}`.`${cluster_name}`.`cc-loc-peve-terraform-input-loop`,
     DESCRIPTOR ($rowtime ),
     INTERVAL '1' SECONDS )
   )
